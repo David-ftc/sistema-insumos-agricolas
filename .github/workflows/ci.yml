@@ -1,0 +1,14 @@
+name: CI-Practica
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: echo 'Simulando npm install...'
+      - name: Lint check
+        run: echo 'Simulando ejecución de Linter...'
+      - name: Run tests
+        run: echo 'Ejecutando pruebas unitarias...'
